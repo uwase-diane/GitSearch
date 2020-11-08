@@ -4,7 +4,6 @@ import { Directive } from '@angular/core';
   selector: '[appDatePipe]'
 })
 export class DatePipeDirective {
-
   constructor() { }
 
 }
