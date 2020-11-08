@@ -6,7 +6,7 @@ Uwase Diane
 
 ## Development server
 
-An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
+This project was generated with Angular CLI version 7.3.6. This is a web app that allows users to search a github username and the users repositories will be displayed alongside his profile details.
 
 ## Setup/Installation Requirements
 
@@ -15,10 +15,12 @@ You then run the command ng serve to see where you'll be viewing the project
 Then you run the cd command to now be working inside the project
 
 ## Project Link
-https://uwase-diane.github.io/quotesProject/
+
+To view the page click on the link below
+
 
 ## Known Bugs
-DateCount
+
 
 
 ## Technologies Used
