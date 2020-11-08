@@ -3,7 +3,9 @@
         <input class="form-control" type="text" placeholder="Please enter github username" name="loginName"
             [(ngModel)]="submit">
         <button class="btn btn-outline-primary" (click)="submitRepos()"><i class="fa fa-search"
-                aria-hidden="true"></i>Search</button>
+                aria-hidden="true"></i>Search user</button>
+                
+                <a href="{{user.html_url}}"><button class="btn-outline-success btn btn-sm"><i class="fa fa-github" style="font-size:20px"></i> &nbsp; <span id="profile">Github Repo</span> </button></a>
     </form>
 </div>
 <div class="container-user">
@@ -12,9 +14,10 @@
             <img src="{{user.avatar_url}}" alt="">
         </div>
         <div class="col">
-            
-            <p>Username: {{user.login}}</p>
-            <p>Repositories: {{user.public_repos}}</p>
+            <p appHighlight>Username: {{user.login}}</p>
+            <p appHighlight>Repositories: {{user.public_repos}}</p>
+            <p appHighlight>Followers: {{ user.followers }}</p>
+            <p appHighlight>Following: {{ user.following }}</p>
         </div>
     </div>
 </div>

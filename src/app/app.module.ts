@@ -7,8 +7,11 @@ import { AppComponent } from './app.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
-import { RepoDetailsComponent } from './repo-details/repo-details.component';
+// import { RepoDetailsComponent } from './repo-details/repo-details.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
+import { DatePipeDirective } from './date-pipe.directive';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FormsModule } from '@angular/forms';
   
     NavbarComponent,
     UserComponent,
-    RepoDetailsComponent,
+    HighlightDirective,
+    DatePipeDirective,
+    // RepoDetailsComponent,
+ 
   
   ],
   imports: [

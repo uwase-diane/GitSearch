@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GitsearchRequestService } from '../gitsearch-http/gitsearch-request.service';
+import { Repo } from '../repo-class/repo';
 
 @Component({
   selector: 'app-repo-details',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoDetailsComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  repo: Repo;
+  submitRepo = "";
+
+  submitRepos() {
+    this.userService.repoRequest(this.submitRepo)
+    console.log(this.submitRepo)
+  }
+
+  constructor(private userService: GitsearchRequestService) { }
+
+  ngOnInit(){
+    this.userService.repoRequest("uwase-diane")
+    this.repo = this.userService.repo;
   }
 
 }

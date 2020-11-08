@@ -1,5 +1,19 @@
-<div class="jumbotron">
-    <h1 class="display-4 text-center">About Goals App</h1>
-    <hr class="my-4">
-    <p class="lead text-center">An Angular app that let's you create your goals and gives you quotes from the world of computing!</p>
-  </div>
+
+<div class="container-content">
+    <form>
+        <button class="btn btn-outline-primary" (click)="submitRepos()"><i class="fa fa-search"
+                aria-hidden="true"></i>Search repo</button>
+    </form>
+</div>
+<div class="container-user">
+    <div class="row">
+        <div class="col">
+            
+            <p>{{repo.name}}</p>
+            <p>{{ repo.description }}</p>
+            <p>{{ repo.forks }}</p>
+            <p>{{ repo.watchers_count }}</p>
+            <p>{{ repo.language }}</p>
+        </div>
+    </div>
+</div>
