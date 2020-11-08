@@ -5,10 +5,10 @@
     <form>
         <input class="form-control" type="text" placeholder="Please enter github username" name="loginName"
             [(ngModel)]="submit">
-        <button class="btn btn-outline-primary" (click)="submitRepos()"><i class="fa fa-search"
+        <button class="btn btn-outline-warning" (click)="submitRepos()"><i class="fa fa-search"
                 aria-hidden="true"></i>Search user</button>
 
-                <a href="{{user.html_url}}"><button class="btn-outline-success btn btn-sm"><i class="fa fa-github" style="font-size:20px"></i> &nbsp; <span id="profile">Github Repo</span> </button></a>
+                <a href="{{user.html_url}}"><button class="btn-outline-danger btn btn-sm"><i class="fa fa-github" style="font-size:20px"></i> &nbsp; <span id="profile">Github Repo</span> </button></a>
     </form>
 
 
@@ -17,7 +17,7 @@
             <img src="{{user.avatar_url}}" alt="">
             <br>
             <br>
-            <div class="card" >
+            <div class="card border-secondary mb-3" >
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item" appHighlight>Username: {{user.login}}</li>
                   <li class="list-group-item" appHighlight>Repositories: {{user.public_repos}}</li>
