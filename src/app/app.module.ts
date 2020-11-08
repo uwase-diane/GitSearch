@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
 import { RepoDetailsComponent } from './repo-details/repo-details.component';
@@ -13,10 +13,11 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
+  
     NavbarComponent,
     UserComponent,
-    RepoDetailsComponent
+    RepoDetailsComponent,
+  
   ],
   imports: [
     BrowserModule,
