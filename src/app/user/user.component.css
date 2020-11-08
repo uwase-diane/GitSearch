@@ -1,0 +1,23 @@
+img{
+    width: 20%;
+    border-radius: 20px;
+    
+}
+.container-content{
+    margin: 100px auto;
+    width: 50%;
+    text-align: center;
+}
+
+button{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 15px;
+    
+}
+div .card{
+    padding-bottom: 15px;
+}
