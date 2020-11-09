@@ -10,7 +10,8 @@ import { UserComponent } from './user/user.component';
 // import { RepoDetailsComponent } from './repo-details/repo-details.component';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
-import { DatePipeDirective } from './date-pipe.directive';
+
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DatePipeDirective } from './date-pipe.directive';
     NavbarComponent,
     UserComponent,
     HighlightDirective,
-    DatePipeDirective,
+
+    DateCountPipe,
     // RepoDetailsComponent,
  
   

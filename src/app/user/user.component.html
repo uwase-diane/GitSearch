@@ -20,6 +20,7 @@
                   <li class="list-group-item" appHighlight>Repositories: {{user.public_repos}}</li>
                   <li class="list-group-item" appHighlight>Followers: {{ user.followers }}</li>
                   <li class="list-group-item" appHighlight>Following: {{ user.following }}</li>
+                  <li class="list-group-item" appHighlight>created : {{ user.created_at | createdDate}} year ago</li>
                 </ul>
               </div>
     </div>

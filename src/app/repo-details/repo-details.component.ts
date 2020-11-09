@@ -9,7 +9,6 @@ import { Repo } from '../repo-class/repo';
 })
 export class RepoDetailsComponent implements OnInit {
 
-
   repo: Repo;
   submitRepo = "";
 
