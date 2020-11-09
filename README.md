@@ -17,7 +17,7 @@ Then you run the cd command to now be working inside the project
 ## Project Link
 
 To view the page click on the link below
-
+https://uwase-diane.github.io/GitSearch/
 
 ## Known Bugs
 
